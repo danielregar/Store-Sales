@@ -132,5 +132,68 @@ Actionable Next Steps:
 - Consumer segment may offer volume but with lower AOV — leverage this with bundled deals, upselling, or promotions.
 - **Consumer brings the traffic, Home Office brings the margin**
 
+## 4.3 Product Analysis
+### 4.3.1 Total Sales by Category and Segment (Stacked Column Chart)
 
+This chart shows how total sales are distributed across different product categories (Technology, Furniture, Office Supplies) and broken down further by customer segments (Consumer, Corporate, Home Office based on the colors).
 
+![image](https://github.com/user-attachments/assets/ce5ad8e7-1501-44b5-823f-17c9fd9a6bdd)
+
+Based on the chart we can see that the top selling product is from The Technology Category, contribute to 37% of total sales and office suplies 31% and furniture 32%. Pretty event distribution based on the category.
+
+based on the segment we can see that cha
+
+1. Technology is the top-performing category
+- It has the highest total sales compared to Furniture and Office Supplies, contributing to 36% of total sales.
+- The light blue and dark blue segments (Consumer and Corporate) dominate this category.
+
+2. Consumer segment leads across all categories
+- The bottom portion (light blue) is the largest in each bar, indicating that Consumer is the largest contributor to sales in all three categories.
+- Consumer purchasing behavior strongly drives revenue across the board.
+
+3. Corporate and Home Office contribute less
+- Corporate (middle segment, dark blue) contributes steadily across all categories but less than Consumer.
+- Home Office (top segment, orange) is the smallest contributor across all categories, especially in Furniture and Office Supplies.
+- but based on total sales Pretty event distribution based on the category.
+
+4. Balanced sales in Furniture and Office Supplies
+- Both categories have comparable total sales and a similar segment distribution.
+- Suggests stable and evenly distributed performance in those categories.
+### 4.3.2 Sales Trend by Category Over The Year(Line Chart)
+
+![image](https://github.com/user-attachments/assets/c9b25e99-1649-4250-adb2-5acfdf4738a1)
+
+1. Consistent Seasonal Spikes – Especially Q4
+All categories show a clear upward spike near the end of each year, especially Q4.
+
+This reflects strong year-end demand, possibly due to:
+
+Corporate budgeting cycles
+
+Holiday promotions or sales events
+
+📌 Action: Plan inventory and campaigns ahead of Q4. This is the peak opportunity window.
+
+2. Technology is the Sales Leader in 2018
+By the end of 2018, Technology sales surged to over 100K, outperforming all other categories.
+
+It also shows more aggressive growth than Furniture or Office Supplies.
+
+📌 Action: Double down on high-performing SKUs or bundles in the Technology category.
+
+3. All Categories Show Growth
+Sales across all three categories are trending upward year-over-year.
+
+Even though there are mid-year dips, they recover strongly by Q4 annually.
+
+📌 Action: Explore what causes those mid-year drops (e.g., seasonality, budget timing, or product availability).
+
+4. Furniture and Office Supplies Are Close Competitors
+Furniture and Office Supplies often perform similarly and show parallel trends.
+
+No category shows a long-term decline — this suggests healthy product lines overall.
+
+📌 Action: Consider whether bundling or cross-promotions could boost upsell between these two.
+
+🔚 Executive Summary (to say out loud):
+"Over the past four years, we’ve seen strong year-end demand across all product categories, with Technology leading the way, especially in 2018. Each category is showing steady growth with predictable seasonality. If we align our campaigns and inventory planning around these patterns — especially Q4 — we can significantly capitalize on the momentum."
