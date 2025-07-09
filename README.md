@@ -50,13 +50,11 @@ theres always a pattern or seasonality spike at Q4 and dip at Q1.
 # Analysis
 # 1. Which product categories drive the most revenue, and how does that vary by region?
 ## Key Insight Summary:
-**Technology** is the **top revenue contributor** in both the East and West regions (~11% each).
+- **Technology** is the **top revenue contributor** in both the East and West regions (~11% each).
+- In the **Central** region, sales are **evenly split** between Technology, Furniture, and Office Supplies (~7% each).
+- The **South** region shows the **lowest sales volume**, with all three categories contributing about 5–6% each, suggesting an underperforming market.
 
-In the **Central** region, sales are **evenly split** between Technology, Furniture, and Office Supplies (~7% each).
-
-The **South** region shows the **lowest sales volume**, with all three categories contributing about 5–6% each, suggesting an underperforming market.
-
-## Visual: Quarterly Sales by Category, Split by Region
+## Quarterly Sales by Category, Split by Region
 
 ![image](https://github.com/user-attachments/assets/f4a83166-db21-4aa0-a7ce-c7da3b2a95aa)
 
@@ -122,7 +120,7 @@ This chart shows total sales over time by each customer segment, revealing seaso
 
 ## Business Implications:
 ### Consumer:
-- Remains the core revenue segment → focus marketing, loyalty programs, and Q4 promotions here.
+- Remains the **core revenue segment** → focus marketing, loyalty programs, and Q4 promotions here.
 - Prioritize Furniture and Technology bundles, especially for seasonal pushes.
 
 ### Corporate:
@@ -134,139 +132,114 @@ This chart shows total sales over time by each customer segment, revealing seaso
 - Investigate the 2015 Technology spike for potential learnings or corrections.
 
 ### All Segments:
-- Technology is a consistent leader → ensure inventory readiness, especially before Q4.
+- **Technology** is a consistent leader → ensure **inventory readiness**, especially before **Q4**.
 - Leverage Q1 dips with off-season promotions or subscription programs to smooth demand.
 
+# 3. What is the shipping performance like – are there delays between order and ship date?
+## Key Insight Summary:
+- Overall, **67% of orders** were delivered **on time**.
+- **Standard Class** is the **most used shipping method** (**60%** of orders) but also has the **highest delay rate** (**30%**).
+- Follow by **Same-day** shipping has **<1% delays**, but it’s used in only **5% of orders**.
+- **First Class and Second Class perform relatively well**, with **<10% delay rates**.
+- Delays are concentrated in **Standard Class** shipments across **all four regions**.
 
+## Method Used to Identify Delays:
+For each shipping mode, we calculated its average shipping time:
 
+ days_to_ship = DATEDIFF(Ship_Date, Order_Date)
+ If days_to_ship > avg_days_for_that_ship_mode → Delayed
+ Else → On-Time
+ 
+| Ship Mode      | Average Shipping Time (days) |
+| -------------- | ------------- |
+| Same Day       | 0 days        |
+| First Class    | 2 days        |
+| Second Class   | 3 days        |
+| Standard Class | 5 days        |
 
+## Regional & Product-Level Delay Breakdown:
+- **Standard Class** is the **most delayed ship method** in every region.
+- **New York and Los Angeles** contribute the **most delayed orders**, together forming **6%** of total delays order.
+   - Delays are most concentrated in these categories & shipping combos:
+     
+    **- Office Supplies – Standard Class** (**14%** of total orders)
+     
+    **- Furniture – Standard Class**
+  
+    **- Office Supplies – Second Class**
+
+   - The top 3 delayed sub-categories are:
+     
+    **-** **Binders - Standard Class** 
+  
+    **-** **Papers - Standard Class**
+  
+    **-** **Furnishings - Standard Class**
+
+**Important**: 
+
+**Binders + Papers are also the most frequently bought pair.**
+
+## Business Implications:
+### Operational Fixes
+- Improve **Standard Class** delivery performance, especially in **NY & LA**.
+- Consider re-routing or optimizing warehouse distribution for high-demand cities.
+
+### Product Handling
+- Flag **Binders and Papers** for tighter shipping control.
+- Monitor inventory + carrier SLAs for **Office Supplies** more closely.
+
+### Strategic Levers
+- Highlight **First Class** and **Same Day** options for **priority customers**.
+- Use delay insights to negotiate better terms with carriers or offer free upgrades to improve the experience
+
+# 4. Which states or cities generate the most revenue, and are we over-relying on certain regions?
+## Key Insight Summary:
+- The **West region** is the company’s strongest market, contributing **32%** of **total sales and customer base.**
+- It is followed by the **East** region with **29**% of sales and **28**% of customers, then the **Central** region at **22**% of sales and **24**% of customers.
+- The **South** region **underperforms**, with just **17**% of total sales and **16**% of customers.
+- Across cities and states, a significant share of sales is concentrated in a few key areas, especially **New York** and **Los Angeles**.
+
+## Region Sales Performance:
+| Region      | % of Total Sales | % of Customers |
+| ----------- | ---------------- | -------------- |
+| **West**    | **32%**          | **32%**        |
+| **East**    | **29%**          | **28%**        |
+| **Central** | **22%**          | **24%**        |
+| **South**   | **17%**          | **16%**        |
+### Top 5 States by Sales:
+| State          | % of Total Sales |
+| -------------- | ---------------- |
+| **California** | **20%**          |
+| **New York**   | **14%**          |
+| Texas          | 7%               |
+| Washington     | 6%               |
+| Pennsylvania   | 5%               |
+
+All other states contribute **less than 5%** of sales, confirming concentration at the top.
+
+### Top 5 Cities by Sales:
+- New York City – 11%
+- Los Angeles – 8%
+- Seattle - 5%
+- San Francisco - 5%
+- Philadelphia - 5%
+
+**Takeaway**: Over **19**% of total sales come from just **New York** and **LA**, indicating a high concentration risk.
+
+## Business Implications:
+### Over-Reliance Risk
+- **NYC + LA** = **19**%+ of total revenue → high business risk if those cities decline.
+- Begin diversifying sales toward 2nd-tier cities (e.g., Atlanta, Denver, Austin) to reduce risk.
+
+### West & East Optimization
+- These two regions generate **61**% of all sales.
+- Prioritize inventory allocation, **Q4** seasonal offers, and premium shipping options to retain dominance
+
+# 5. Are there any seasonal trends in sales performance?
+ based on the year on 2016 theres -5% on sales, and rebound in 2017 with growth 31% and in 2018 growth 21% from 2017.
+ 
 # END
-
-
-
-## 1. What product categories drive the most revenue by region?
-### Key Insight:
-
-**Technology** is the **leading revenue** driver in both the **East** and **West regions**, contributing **~11%** each. 
-**Furniture** and **Office Supplies** follow closely in both areas.
-
-In the **Central region**, sales are **evenly distributed across the three categories** (~7% each).
-**The South region** has the **lowest** contribution (**~5–6%** per category), showing balanced but lower sales volume.
-
-### 1.1 Time-series line chart of quarterly sales by category
-
-
-- **East & West**: **Technology** spikes significantly each year in Q4, especially in East with a sharp surge in late 2018.
-- **Central**: All categories have a balanced pattern, though Technology shows slightly higher peaks in later years.
-- **South**: Overall revenue is lower, with no dominant category overall even tho theres a huge spike in early 2015 at Q1 on Home Office category need to clarify this if this because special contracts, or data issues?, and Technology even dips below Furniture in several quarters.
-
-### Business Value:
-- **East & West**: Double down on Technology stock, marketing, and Q4 campaign
-- **South**: Watch performance - possible area for growth or cost-saving.
-- **Central**: Focus on maintaining balance and responding to quarterly surges.
-
-### 1.2 Sub-Category Pairing:
-
-- **Binders + Paper** are the **most frequently bought together**, especially by all three customer segments.
-- However, the **highest revenue-generating** product pair is **Chairs + Paper**, accounting for **~5%** of total sales.
-
-### Business Value:
-
-- **Cross-sell campaigns for Binders + Paper** could increase basket size.
-
-2. Who are our top customer segments and what do they buy?
-Key Insight:
-The Consumer segment contributes over 50% of both sales and customer base, making it the most critical segment.
-All segments (Consumer, Corporate, Home Office) show a similar purchasing pattern:
-
-Tech is the most purchased category
-
-Sales peak in Q4 and dip in Q1 consistently every year
-
-Visual:
-📊 Bar chart: Sales by Segment
-📈 Line chart: Category sales by quarter per segment
-
-Business Value:
-
-Consumers drive the most value — consider loyalty programs or segment-based marketing
-
-Technology campaigns should be planned for Q4
-
-Prepare for demand slowdowns in Q1
-
-3. Are there shipping delays and which ship modes cause them?
-Key Insight:
-On-time delivery rate is 67%.
-Standard Class is the most used ship mode (60% of orders), but also has the highest delay rate (30% delayed).
-Same Day is the most reliable, with almost 0% delay but only used for 5% of orders.
-
-Delayed Order Patterns:
-
-New York & Los Angeles are the cities with the most delayed orders (~4% combined).
-
-Delays are most common in Office Supplies, especially in the Standard Class.
-
-Top delayed sub-categories: Binders, Paper, Furnishings.
-
-Business Value:
-
-Standard Class needs review — is it cost-efficient or hurting customer experience?
-
-Target supply chain fixes in NY & LA.
-
-High-volume items like Binders + Paper must be prioritized in fulfillment, since they’re frequently bought together and also highly delayed.
-
-4. Are we over-relying on certain states or cities for revenue?
-Key Insight:
-Yes. Sales are heavily concentrated in a few regions:
-
-West region leads with 32% of total sales, followed by East and Central.
-
-South lags behind with only 17%.
-
-City-Level:
-
-Top 5 cities: New York (11%), LA (8%), Seattle, San Francisco, Philadelphia (~5% or below)
-
-NY + LA together = nearly 20% of total sales
-
-State-Level:
-
-California (20%), New York (14%), Texas (7%), Washington (6%), Pennsylvania (5%)
-
-All other states <5%
-
-Business Value:
-
-There’s a potential risk in over-reliance on a few states.
-
-Diversify campaigns or promotions to drive growth in underperforming regions.
-
-West performs well — reinforce success with deeper segmentation.
-
-5. Are there seasonal trends in sales performance?
-Key Insight:
-Clear and consistent seasonal patterns across 4 years:
-
-Sales spike in Q4 (especially November)
-
-Lowest in Q1, especially February
-
-Secondary spike observed in September
-
-Visual:
-📈 Monthly and quarterly trend line charts
-
-Business Value:
-
-Plan major campaigns in Q4 (Black Friday, holiday season)
-
-Avoid major promotions in Q1 unless needed to recover sales
-
-Align inventory and staffing with seasonal demand
-
-theres consistent spike at september and November in those 4 years and noticable dip at February.
 
 
 
