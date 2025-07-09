@@ -46,7 +46,7 @@ The top 5 states by market share are California with 20%, New York with 14%, the
 theres always a pattern or seasonality spike at Q4 and dip at Q1.
 - By Month
   ![image](https://github.com/user-attachments/assets/06056f9e-70bf-429e-a47b-73d9d1faf2e1)
-
+# FIX
 # Analysis
 # 1. Which product categories drive the most revenue, and how does that vary by region?
 ## Key Insight Summary:
@@ -56,7 +56,7 @@ In the **Central** region, sales are **evenly split** between Technology, Furnit
 
 The **South** region shows the **lowest sales volume**, with all three categories contributing about 5–6% each, suggesting an underperforming market.
 
-**Visual: Quarterly Sales by Category, Split by Region**
+## Visual: Quarterly Sales by Category, Split by Region
 
 ![image](https://github.com/user-attachments/assets/f4a83166-db21-4aa0-a7ce-c7da3b2a95aa)
 
@@ -68,7 +68,7 @@ The **South** region shows the **lowest sales volume**, with all three categorie
 
 ### South Region:
 - Sales volume is significantly lower across all categories.
-- **A sudden spike in Q1 2015 for the Home Office** segment may indicate a **large one-off purchase or a data anomaly**, and should be investigated further.
+- **A sudden spike in Q1 2015 for the Technology Category**  may indicate a **large one-off purchase or a data anomaly**, and should be investigated further.
 
 ## Business Implications:
 ### East & West:
@@ -92,13 +92,55 @@ The **South** region shows the **lowest sales volume**, with all three categorie
 - Promote **binders + paper bundles** to increase average basket size.
 - Consider **premium Chairs + Paper** packages to maximize transaction value in campaigns.
 - Pay attention to stock and delivery of these paired products, especially since **Binders** also show up as one of the **most delayed items in shipping.**
+- 
+# 2. Who are our top customer segments, and what do they buy?
+## Key Insight Summary
+## Quarterly Sales by Segment
+This chart shows total sales over time by each customer segment, revealing seasonality patterns and segment growth.
+![image](https://github.com/user-attachments/assets/4ae7b128-182b-4d79-a372-ccebab9671c7)
+
+- The **Consumer** segment is the **largest revenue driver**, contributing **51% of total sales** and **52% of the customer base**.
+- Followed by **Corporate**, and **Home Office** with **19% share**.
+- All segments show a **clear Q4 sales peak** and **Q1 dip**, indicating seasonality.
+
+## Quarterly Sales by Category per Segment
+![image](https://github.com/user-attachments/assets/61b3577b-4b2a-478f-b8ab-f0877b948ac9)
+### Consumer Segment:
+- Highest revenue and customer base.
+- **Strong Q4 peaks** — especially in **Technology** and **Furniture**.
+- Office Supplies performs consistently but rarely spikes to the highest.
+
+### Corporate Segment:
+- Several **Q4 spikes** across all three categories (2015–2016).
+- A **sharp** Technology **surge** in **Q4 2017**.
+- Since 2018, all categories show an **upward trend**, indicating increasing corporate engagement.
+
+### Home Office Segment:
+- **Lowest** **overall sales** volume.
+- One major **Technology spike in Q1 2015**, possibly a special order or data anomaly (**needs verification**).
+- Noticeable **upward growth across all categories from early 2018**.
+
+## Business Implications:
+### Consumer:
+- Remains the core revenue segment → focus marketing, loyalty programs, and Q4 promotions here.
+- Prioritize Furniture and Technology bundles, especially for seasonal pushes.
+
+### Corporate:
+- Increasing activity — consider enterprise packages and B2B loyalty plans.
+- Monitor post-2018 trends for strategic expansion.
+
+### Home Office:
+- Small but growing — test remote work bundles, especially in Technology.
+- Investigate the 2015 Technology spike for potential learnings or corrections.
+
+### All Segments:
+- Technology is a consistent leader → ensure inventory readiness, especially before Q4.
+- Leverage Q1 dips with off-season promotions or subscription programs to smooth demand.
 
 
 
 
-
-
-
+# END
 
 
 
