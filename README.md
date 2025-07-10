@@ -45,23 +45,71 @@ The following five questions were posed by different departments to support stra
 
 
 # Executive Summary
-- **Seasonality & Growth Trends**: **November** is the peak sales month every year with **February** the **lowest**.
+- **Seasonality & Growth Trends**:
+
+  **November** is the peak sales month every year with **February** the **lowest**.
+  
   Overall **sales grew 31% in 2017 and 21% in 2018**, showing strong upward momentum. These trends are consistent across product and customer segments.
   
-- **Product Category Performance**: **Technology** leads sales across all regions especially **East and West**.
+- **Product Category Performance**:
+
+  **Technology** leads sales across all regions especially **East and West**.
+  
   **Q4** consistently drives peak sales while **Q1** lags. In **underperforming** regions like the **South**, no category stands out, hinting at missed market potential.
   
-- **Seasonality & Growth Trends**: **November** is the peak sales month every year with **February** the lowest
+- **Seasonality & Growth Trends**:
+
+  **November** is the peak sales month every year, with **February** the lowest
+  
   Overall sales grew **31**% in 2017 and **21**% in 2018, showing strong upward momentum. These trends are consistent across product and customer segments.
   
-- **Customer Segment Behavior**: **Consumer** segment dominates (**51**% of sales), but **Corporate** has grown significantly since 2017.
+- **Customer Segment Behavior**:
+
+  **Consumer** segment dominates (**51**% of sales), but **Corporate** has grown significantly since 2017.
+  
   **Technology** and **Furniture** are the top categories, and all segments show clear seasonal patterns (**Q4 peak, Q1 dip**).
   
-- **Shipping Performance**: **67**% of orders are delivered on time, but **Standard Class**, though most use, accounts for **30**% of delays
+- **Shipping Performance**:
+
+  **67**% of orders are delivered on time, but **Standard Class**, though most use, accounts for **30**% of delays
+  
   **New York and LA** contribute heavily to delayed shipments, with **Office Supplies and Binders being the most affected**.
   
-- **Geographic Revenue Concentration**: **California and New York drive 34% of total sales**, while **NYC** and **LA** alone contribute **19**%. **The South** underperforms significantly, highlighting both concentration risk and growth opportunity.
+- **Geographic Revenue Concentration**:
 
+  **California and New York drive 34% of total sales**, while **NYC** and **LA** alone contribute **19**%. **The South** underperforms significantly, highlighting both concentration risk and growth opportunity.
+
+
+## AOV by Year and Quarter
+<img width="1099" height="267" alt="image" src="https://github.com/user-attachments/assets/78fb2a82-f953-45a0-ba32-2b87c25a6c21" />
+
+Customers typically spend between $400–$500 per order, with some seasonal spikes and dips. These shifts likely reflect major campaign periods (like **Q4**) and post-holiday slowdowns (like **Q1**).
+
+- AOV fluctuates each quarter, ranging from $**354** to $**582**, while the average across all periods is around $445.
+- The highest AOV occurred in Q1 2015 ($582), and the lowest in **Q2** **2018** ($**354**).
+- Despite fluctuations, AOV generally stays within the **$400–$500** range.
+## AOV By Segment
+| Segment      | AOV |
+| -------------- | ------------- |
+| Home Office       | $474        |
+| Corporate    | $458         |
+| Consumer   | $452        |
+- All three segments have relatively **similar AOVs**, falling in the **$450–$475 range**. 
+- However, segment size varies:
+- **Consumers** dominate in **volume**, while **Home Office** customers tend to place **fewer but higher-value orders.**
+- This is especially evident in categories like **Technology**, where **Home Office** buyers average over $**656** per order — **the highest** among all segment-category combinations.
+
+## AOV By Category
+
+| Category      | AOV |
+| -------------- | ------------- |
+| Technology       | $545        |
+| Furniture    | $419         |
+| Office Supplies   | $191        |
+
+- **Technology** clearly leads in AOV, followed by **Furniture**, with **Office Supplies** trailing far behind.
+- These values align directly with the revenue breakdown: although **Office Supplies** drive **high order volume**, their **lower** per-order value **pulls down** the overall **AOV**.
+- Meanwhile, **Technology** contributes **more revenue per transaction** across every segment, especially among **Home Office and Corporate buyers.**
 
 # Insights and Findings
 # 1. Are there any seasonal trends in sales performance?
