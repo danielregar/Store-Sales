@@ -86,7 +86,7 @@ The following five questions were posed by different departments to support stra
 - Most significant **Q4 growth occurred in 2017 and 2018**, showing market acceleration in those years.
 
 
-### Monthly Trend Confirmation:
+### Monthly Trend:
 ![image](https://github.com/user-attachments/assets/9d573c91-ddab-40dd-b9be-9e5059cf2fc9)
 
 Across all 4 years (2015–2018), there is a clear seasonal sales pattern:
@@ -102,14 +102,14 @@ Across all 4 years (2015–2018), there is a clear seasonal sales pattern:
 
  - Prioritize marketing budgets, stock levels, and staffing for **Q4**. Launch campaigns in late **Q3** to build momentum.
  - Introduce **off-season promos, bundled discounts, or subscription renewals** to reduce the **dip in Q1**.
- - Monthly Seasonality is **predictable**. Use these patterns in demand **forecasting models to align procurement, marketing, and logistics.**
+
 
 # 2. Which product categories drive the most revenue, and how does that vary by region?
 ## Key Insight Summary:
 - **Technology** is the **top revenue contributor** in both the East and West regions (~11% each).
 - In the **Central** region, sales are **evenly split** between Technology, Furniture, and Office Supplies (~7% each).
 - The **South** region shows the **lowest sales volume**, with all three categories contributing about 5–6% each, suggesting an underperforming market.
-- 
+
 ### Total Sales by Category
 ![image](https://github.com/user-attachments/assets/304db43b-e0a8-4274-9b6f-c5f5f17b0f65)
 
