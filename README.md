@@ -18,7 +18,7 @@ The dataset includes **9,789 rows** and **17 columns** representing various dime
 
 The cleaned dataset enables a structured and meaningful analysis across the following key stakeholder questions.
 
-# 🧑‍💼 Stakeholder Context & Business Questions
+# Stakeholder Context & Business Questions
 
 The following five questions were posed by different departments to support strategic decision-making:
 
