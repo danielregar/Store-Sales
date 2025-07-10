@@ -22,6 +22,10 @@ The cleaned dataset enables a structured and meaningful analysis across the foll
 
 The following five questions were posed by different departments to support strategic decision-making:
 
+### "Are there any seasonal trends in sales performance?"
+- Asked by: Marketing Director
+- Purpose: Align promotional planning and staffing with seasonal demand.
+  
 ### "Which product categories drive the most revenue, and how does that vary by region?"
 - Asked by: Head of Product & Merchandising
 - Purpose: Optimize inventory planning and product strategy across regions.
@@ -38,9 +42,7 @@ The following five questions were posed by different departments to support stra
 - Asked by: Regional Sales Strategy Lead
 - Purpose: Guide geographic expansion and de-risk revenue concentration.
 
-### "Are there any seasonal trends in sales performance?"
-- Asked by: Marketing Director
-- Purpose: Align promotional planning and staffing with seasonal demand.
+
 
 # Executive Summary
 - **Seasonality & Growth Trends**: **November** is the peak sales month every year with **February** the **lowest**.
