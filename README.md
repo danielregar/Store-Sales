@@ -1,117 +1,195 @@
-1. “Which product categories drive the most revenue, and how does that vary by region?”
- - Technology is the Revenue Driver in The East and West Region, around 11% each. Then follow by furniture and office supplies, for each region.
- On Central Region, theres a balanced distribution between the 3 categories around 7% each.
- and the lowest region is the south, with a balance distrubtion as well around 5-6% each category.
--
--time-trend category sales over the year - quarter
-  ![image](https://github.com/user-attachments/assets/e374d45e-bb10-489e-b614-328d49db51a1)
+# Project Overview
+
+This report analyzes sales data from a retail store operating between **2015 and 2018**. 
+
+The dataset includes **9,789 rows** and **17 columns** representing various dimensions of business operations, from customer transactions to product categories, shipping logistics, and geographic locations. The goal is to uncover actionable insights that can drive smarter business decisions across product, customer, operations, and marketing strategy.
+
+# Dataset Structure
+
+**Identifiers & Customer Info**: Row_ID, Order_ID, Customer_ID, Customer_Name
+
+**Shipping Info**: Ship_Mode, Order_Date_Clean, Ship_Date_Clean
+
+**Customer Segmentation**: Segment, Country, City, State, Postal_Code, Region
+
+**Product Info**: Product_ID, Category, Sub_Category
+
+**Sales Info**: Sales_Clean
+
+The cleaned dataset enables a structured and meaningful analysis across the following key stakeholder questions.
+
+# 🧑‍💼 Stakeholder Context & Business Questions
+
+The following five questions were posed by different departments to support strategic decision-making:
+
+### "Which product categories drive the most revenue, and how does that vary by region?"
+- Asked by: Head of Product & Merchandising
+- Purpose: Optimize inventory planning and product strategy across regions.
+
+### "Who are our top customer segments, and what do they buy?"
+- Asked by: VP of Sales & Customer Strategy
+- Purpose: Tailor marketing and retention efforts based on buyer behavior.
+
+### "What is the shipping performance like – are there delays between order and ship date?"
+- Asked by: Logistics & Fulfillment Manager
+- Purpose: Identify areas for operational improvement in delivery timelines.
+
+### "Which states or cities generate the most revenue, and are we over-relying on certain regions?"
+- Asked by: Regional Sales Strategy Lead
+- Purpose: Guide geographic expansion and de-risk revenue concentration.
+
+### "Are there any seasonal trends in sales performance?"
+- Asked by: Marketing Director
+- Purpose: Align promotional planning and staffing with seasonal demand.
+
+# Executive Summary
+- **Seasonality & Growth Trends**: **November** is the peak sales month every year with **February** the **lowest**.
+  Overall **sales grew 31% in 2017 and 21% in 2018**, showing strong upward momentum. These trends are consistent across product and customer segments.
+  
+- **Product Category Performance**: **Technology** leads sales across all regions especially **East and West**.
+  **Q4** consistently drives peak sales while **Q1** lags. In **underperforming** regions like the **South**, no category stands out, hinting at missed market potential.
+  
+- **Seasonality & Growth Trends**: **November** is the peak sales month every year with **February** the lowest
+  Overall sales grew **31**% in 2017 and **21**% in 2018, showing strong upward momentum. These trends are consistent across product and customer segments.
+  
+- **Customer Segment Behavior**: **Consumer** segment dominates (**51**% of sales), but **Corporate** has grown significantly since 2017.
+  **Technology** and **Furniture** are the top categories, and all segments show clear seasonal patterns (**Q4 peak, Q1 dip**).
+  
+- **Shipping Performance**: **67**% of orders are delivered on time, but **Standard Class**, though most use, accounts for **30**% of delays
+  **New York and LA** contribute heavily to delayed shipments, with **Office Supplies and Binders being the most affected**.
+  
+- **Geographic Revenue Concentration**: **California and New York drive 34% of total sales**, while **NYC** and **LA** alone contribute **19**%. **The South** underperforms significantly, highlighting both concentration risk and growth opportunity.
 
 
-sub-category 
-- Salah satu barang yang paling sering di beli secara bersamaan yaitu binders. Binders + Paper, adalah the most bought pair items. follow by Binders + Storages, and Phones.
-- But the pair items that contribut to the most sales is Chairs + Papers, conrtributing 5% of total sales
-- where accros the 3 segment, binders + papers is the most bought paired items. 
+# Insights and Findings
+# 1. Are there any seasonal trends in sales performance?
 
-2. Top Customer Segments and Their Buying Behavior
+## Key Insight Summary
+- **2018** marked the highest total sales, with **21**% YoY growth from **2017**  strong upward trend in business performance.
+- **February** is the **weakest** sales month across all years,  likely due to the  post-holiday dip and fewer working days.
+- **Q4** is consistently the **peak** quarter, especially in **November**,  aligning with seasonal demand like Black Friday and holiday shopping.
+- **Upward sales trend from Q1 to Q4 every year** — presents a reliable pattern for inventory planning and campaign launches.
 
-Consumer Segment is the most contributor around 51% of total sales and 52% of the  customer base. They tend to purchase technologies category, but with pretty balanced sales distribution on the other 2 categories, with peak in Q4 and dip on Q1 each year. 
-the pattern also same for all other segments where the sales dip at q1 and peak at q4, with tehnology being the most bought categories acrros all segments.  
+### Yearly Sales Trend:
+ ![image](https://github.com/user-attachments/assets/c408a712-b8fa-4249-8df9-34fbb64b155c)
 
-3. Shipping Performance and Delays
+- **2016** experienced a **-5% sales dip**.
+- In **2017**, sales **rebounded sharply by +31%**  a significant recovery and growth.
+- **2018** continued **upward momentum with +21% YoY growth**, reaching the **highest annual sales total.**
 
-Average shipping for each ship_mode, days_to_ship (Ship_Date - Order_Date) > avg_ship then 'Delayed', Else 'On-Time':
- - Same Day       = 0 Days
- - First Class    = 2 Days
- - Second Class   = 3 Days
- - Standard Class = 5 Days
+### Quarterly Seasonality:
+ ![image](https://github.com/user-attachments/assets/3e24fdbc-dbf9-4c87-9b4c-cab1cd90a0f2)
+- **Q1** is consistently the **lowest-performing quarter**, likely due to the consumer slowdown post-holiday.
+- **Q4** is the **peak every year** , sales **climb gradually from Q1 → Q4.**
+- Most significant **Q4 growth occurred in 2017 and 2018**, showing market acceleration in those years.
 
-The majority, or 67% of the order, is on time, where Standard Class is the most used ship mode with 60% of the total order, but also contributes to the most delayed order, with 30% of its orders being delayed. 
-where same day has the least orders, only 5% of total orders, but also has the least delayed percentage, below 1%.In  where first and second classes, the delayed order is below 10%.
 
-Standard Class is the most used ship mode acrros 4 region, but also the most delayed ship mode acrros those region.  where the most delayed order is from New York and Los Angeles, both combine as 4% of delayed total orders.
-the most delayed category is Office Supplies by standard_class, follow by Furniture Standard Class and office supplies second class. 
-top 3 most delayed sub-category is binders, papers, and furnishings. need to mark on this, because binders+papers, is the most bought paired item. 
+### Monthly Trend Confirmation:
+![image](https://github.com/user-attachments/assets/9d573c91-ddab-40dd-b9be-9e5059cf2fc9)
 
-4. “Which states or cities generate the most revenue, and are we over-relying on certain regions?”
-west region is the top region, contributing  32% of total sales and customer base. follow by the east, and central region. the least is South region, 17% total sales and 16% of customer base.
+Across all 4 years (2015–2018), there is a clear seasonal sales pattern:
+- **February** has the **lowest sales in all 4 years** , likely due to shorter month & budget resets.
+- **November** consistently shows the highest monthly sales, likely driven by Black Friday and holiday shopping.
+- **2018** outperformed other years in nearly **every month,** confirming business growth.
+- **Key months**: **September, November, December.**
+- **November** is the **consistent peak** month.
+- **February** **lags** in all 4 years.
+- 2015–2018 trends align well, confirming pattern reliability.
+  
+## Business Implications:
 
-the top 5 city is New York, LA, seattle, san fransisco, and philadelphia. where New York is the highest contribute with 11% and LA the second with 8%. the other 3 is 5% and below that is under 5%. so pretty relying on new york and LA.
+ - Prioritize marketing budgets, stock levels, and staffing for **Q4**. Launch campaigns in late **Q3** to build momentum.
+ - Introduce **off-season promos, bundled discounts, or subscription renewals** to reduce the **dip in Q1**.
+ - Monthly Seasonality is **predictable**. Use these patterns in demand **forecasting models to align procurement, marketing, and logistics.**
 
-The top 5 states by market share are California with 20%, New York with 14%, then Texas with 7%, Washington with 6%, and Pennsylvania with 5% The other are below 5%.
-
-5. “Are there any seasonal trends in sales performance?”
-
-- By Quarter
-![image](https://github.com/user-attachments/assets/2ffe8c7a-f4fe-4970-a7f6-f9710411dc6a)
-theres always a pattern or seasonality spike at Q4 and dip at Q1.
-- By Month
-  ![image](https://github.com/user-attachments/assets/06056f9e-70bf-429e-a47b-73d9d1faf2e1)
-# FIX
-# Analysis
-# 1. Which product categories drive the most revenue, and how does that vary by region?
+# 2. Which product categories drive the most revenue, and how does that vary by region?
 ## Key Insight Summary:
 - **Technology** is the **top revenue contributor** in both the East and West regions (~11% each).
 - In the **Central** region, sales are **evenly split** between Technology, Furniture, and Office Supplies (~7% each).
 - The **South** region shows the **lowest sales volume**, with all three categories contributing about 5–6% each, suggesting an underperforming market.
+- 
+### Total Sales by Category
+![image](https://github.com/user-attachments/assets/304db43b-e0a8-4274-9b6f-c5f5f17b0f65)
 
-## Quarterly Sales by Category, Split by Region
+- Sales across all three categories consistently exceeded the long-term average in **Q4**, especially for Technology in **2018**.
+- Most dips below the average line occur in **Q1**, confirming a consistent post-holiday slowdown.
 
-![image](https://github.com/user-attachments/assets/f4a83166-db21-4aa0-a7ce-c7da3b2a95aa)
+### Quarterly Sales by Category, Split by Region
 
-### East & West Regions:
-- **Technology**  consistently leads sales and shows **strong seasonal spikes in Q4**, especially in East, where Q4 2018 saw a major peak.
+![image](https://github.com/user-attachments/assets/56e58963-9f14-43e9-b063-4bf787bc7e19)
+### East: 
+- **Technology** is a consistent **outperformer**, especially in **Q4**, with a dramatic spike in late **2018**. 
+- This indicates strong seasonal demand and a market highly responsive to tech promotions.
 
-### Central Region:
-- All three categories are relatively balanced, with **Technology slightly increasing** toward the end of the period.
+### West: 
+- Performance is steady across categories, with **Technology** and **Furniture** showing repeated seasonal peaks.
+- This suggests a mature market with opportunities to sustain revenue through dependable campaigns rather than aggressive growth pushes.
 
-### South Region:
-- Sales volume is significantly lower across all categories.
-- **A sudden spike in Q1 2015 for the Technology Category**  may indicate a **large one-off purchase or a data anomaly**, and should be investigated further.
+### Central: 
+- Sales are **balanced across all three categories**, with no clear leader.
+- Technology begins to trend upward toward the end of the period, pointing to a potential shift in customer preferences.
+
+### South: 
+- Lags significantly behind other regions.
+- The one notable event is a spike in Technology sales in **Q1** 2015, possibly a large **one-time purchase or data anomaly**.
+- Otherwise, sales remain flat, signaling either low demand or operational constraints.
 
 ## Business Implications:
 ### East & West:
 - **Prioritize Technology** inventory, marketing, and promotions.
-- Align Q4 campaigns with historic revenue spikes.
+- Align **Q4** campaigns with historic revenue spikes.
 
 ### Central:
 - Maintain a **balanced product strategy** while tracking trends for any dominant shift over time.
 
 ### South:
 - Consider targeted marketing or channel reviews to identify growth opportunities.
-- Investigate the Q1 2015 spike for validity.
+- Investigate the **Q1** 2015 spike for **validity**.
 
 ## Frequently Bought Together (Sub-Category Pairs)
 
 - **Binders + Paper** are **the most frequently bought pair**, consistent **across all customer segments**.
-- **The highest-revenue pair is Chairs + Paper**, contributing roughly 5% of total sales.
+- **The highest total sales pair is Chairs + Paper**, contributing roughly 5% of total sales.
 
 ### Business Implications for Cross-Selling:
 
 - Promote **binders + paper bundles** to increase average basket size.
 - Consider **premium Chairs + Paper** packages to maximize transaction value in campaigns.
 - Pay attention to stock and delivery of these paired products, especially since **Binders** also show up as one of the **most delayed items in shipping.**
-- 
-# 2. Who are our top customer segments, and what do they buy?
+
+# 3. Who are our top customer segments, and what do they buy?
+
+**Segment Overview**:
+The customer base is divided into three primary segments: Consumer, Corporate, and Home Office.
+
 ## Key Insight Summary
-## Quarterly Sales by Segment
-This chart shows total sales over time by each customer segment, revealing seasonality patterns and segment growth.
-![image](https://github.com/user-attachments/assets/4ae7b128-182b-4d79-a372-ccebab9671c7)
+- The **Consumer** segment drives the **majority of sales**, contributing **51% of revenue** and **52% of the customer base**. It consistently performs above average, with notable **Q4** surges — especially in 2015, 2017, and 2018.
+- The **Corporate** segment is gaining momentum, particularly from **2017 onward**. Its **Q4** growth and increasing share position it as a rising strategic opportunity.
+- The **Home Office** segment, although the **smallest** (~**19**%), is **trending upward**. Growth is most visible from mid-**2017**, with all three categories gaining traction, especially Technology.
+- All segments share the same seasonal rhythm — dipping in **Q1** and peaking in **Q4** — reinforcing the importance of aligning campaigns with buying cycles.
+- Across segments, **Technology** and **Furniture** **dominate**, while Office Supplies provides consistent, if less volatile, performance.
 
-- The **Consumer** segment is the **largest revenue driver**, contributing **51% of total sales** and **52% of the customer base**.
-- Followed by **Corporate**, and **Home Office** with **19% share**.
-- All segments show a **clear Q4 sales peak** and **Q1 dip**, indicating seasonality.
+### Quarterly Sales by Segment
+![image](https://github.com/user-attachments/assets/06db3197-c64a-4a14-b46c-299b6eaa6291)
 
-## Quarterly Sales by Category per Segment
-![image](https://github.com/user-attachments/assets/61b3577b-4b2a-478f-b8ab-f0877b948ac9)
+- **Consumer** is consistently **above average** and the largest contributor to revenue, particularly strong in late **2015, 2017, and 2018**.
+- **Corporate** has a **steady upward trend**, showing increased engagement, especially from **2017** onward, nearly reaching Consumer's level in some quarters.
+- **Home Office** is **below the average**, but has shown clear improvement starting in mid-2017, especially in late 2018.
+
+### Quarterly Sales by Category per Segment
+![image](https://github.com/user-attachments/assets/d60d81f3-6aa2-43e2-b775-ee177e107d24)
+
 ### Consumer Segment:
 - Highest revenue and customer base.
 - **Strong Q4 peaks** — especially in **Technology** and **Furniture**.
 - Office Supplies performs consistently but rarely spikes to the highest.
+- All 3 categories mostly stay above the average line, confirming high-value behavior.
 
 ### Corporate Segment:
 - Several **Q4 spikes** across all three categories (2015–2016).
 - A **sharp** Technology **surge** in **Q4 2017**.
 - Since 2018, all categories show an **upward trend**, indicating increasing corporate engagement.
+- All categories gradually rise above the average by 2018.
 
 ### Home Office Segment:
 - **Lowest** **overall sales** volume.
@@ -135,7 +213,7 @@ This chart shows total sales over time by each customer segment, revealing seaso
 - **Technology** is a consistent leader → ensure **inventory readiness**, especially before **Q4**.
 - Leverage Q1 dips with off-season promotions or subscription programs to smooth demand.
 
-# 3. What is the shipping performance like – are there delays between order and ship date?
+# 4. What is the shipping performance like – are there delays between order and ship date?
 ## Key Insight Summary:
 - Overall, **67% of orders** were delivered **on time**.
 - **Standard Class** is the **most used shipping method** (**60%** of orders) but also has the **highest delay rate** (**30%**).
@@ -177,8 +255,7 @@ For each shipping mode, we calculated its average shipping time:
     **-** **Furnishings - Standard Class**
 
 **Important**: 
-
-**Binders + Papers are also the most frequently bought pair.**
+**Binders + Papers are also the most frequently bought pair sub-category.**
 
 ## Business Implications:
 ### Operational Fixes
@@ -193,7 +270,7 @@ For each shipping mode, we calculated its average shipping time:
 - Highlight **First Class** and **Same Day** options for **priority customers**.
 - Use delay insights to negotiate better terms with carriers or offer free upgrades to improve the experience
 
-# 4. Which states or cities generate the most revenue, and are we over-relying on certain regions?
+# 5. Which states or cities generate the most revenue, and are we over-relying on certain regions?
 ## Key Insight Summary:
 - The **West region** is the company’s strongest market, contributing **32%** of **total sales and customer base.**
 - It is followed by the **East** region with **29**% of sales and **28**% of customers, then the **Central** region at **22**% of sales and **24**% of customers.
@@ -219,27 +296,26 @@ For each shipping mode, we calculated its average shipping time:
 All other states contribute **less than 5%** of sales, confirming concentration at the top.
 
 ### Top 5 Cities by Sales:
-- New York City – 11%
-- Los Angeles – 8%
-- Seattle - 5%
-- San Francisco - 5%
-- Philadelphia - 5%
+
+| State          | % of Total Sales |
+| -------------- | ---------------- |
+| **New York City** | **11**%          |
+| **Los Angeles**   | **8**%          |
+| Seattle          | 7%               |
+| San Francisco     | 5%               |
+| Philadelphia   | 5%               |
+
 
 **Takeaway**: Over **19**% of total sales come from just **New York** and **LA**, indicating a high concentration risk.
 
 ## Business Implications:
 ### Over-Reliance Risk
-- **NYC + LA** = **19**%+ of total revenue → high business risk if those cities decline.
-- Begin diversifying sales toward 2nd-tier cities (e.g., Atlanta, Denver, Austin) to reduce risk.
+- **NYC + LA** = **19**% of total revenue → high business risk if those cities decline.
+- Begin diversifying sales toward 2nd-tier cities  to reduce risk.
 
 ### West & East Optimization
 - These two regions generate **61**% of all sales.
 - Prioritize inventory allocation, **Q4** seasonal offers, and premium shipping options to retain dominance
-
-# 5. Are there any seasonal trends in sales performance?
- based on the year on 2016 theres -5% on sales, and rebound in 2017 with growth 31% and in 2018 growth 21% from 2017.
- 
-# END
 
 
 
